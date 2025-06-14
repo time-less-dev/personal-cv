@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Offers</title>
+  </head>
+  <body>
+    <!--FORMS-->
+    <h3>FOR JOB OFFERS PLEASE FILL THE FORM BELOW</h3>
+    <!--NAME-->
+    <form
+      action="mailto:onyekachihector@gmail.com"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="Fullname">Fullname:</label><br />
+      <input
+        type="text"
+        id="Fullname"
+        minlength="6"
+        maxlength="20"
+        placeholder="please enter a valid name"
+        pattern="[a-zA-Z\s]+"
+        required
+        name="Fullname"
+      />
+      <!--RADIO-->
+      <p>
+        <label for="title">Please Select your Title:</label><br />
+        <label for="mr">Mr.</label
+        ><input type="radio" id="mr" value="Mr." name="title" />
+        <label for="mrs">Mrs.</label
+        ><input type="radio" id="mrs" value="Mrs." name="title" />
+        <label for="doctor">Ph.D.</label
+        ><input type="radio" id="doctor" value="Ph.D" name="title" />
+      </p>
+      <!--EMAIL-->
+      <p>
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="johndoe@gmail.com"
+          required
+          name="email"
+        />
+      </p>
+      <!--PHONE NUMBER-->
+      <p>
+        <label for="Phone number">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="Phone number"
+          placeholder="+2341234567890"
+          required
+          name="Phone number"
+          pattern="^\+234\d{10}$"
+        />
+      </p>
+      <!--SUBJECT-->
+      <p>
+        <label for="Subject">Subject:</label><br />
+        <input
+          type="text"
+          id="Subject"
+          placeholder="Job Offer"
+          name="Subject"
+        />
+      </p>
+      <!--MESSAGE-->
+      <p>
+        <label for="sendamessage">Message</label><br />
+        <textarea
+          id="sendamessage"
+          rows="12"
+          cols="30"
+          placeholder="Describe your offer here"
+          name="message"
+        ></textarea>
+      </p>
+      <!--FILE-->
+      <label for="file">Attach Documentations if Available</label>
+      <input
+        type="file"
+        id="file"
+        accept="image/png, image/jpeg, .docx, .pdf, .word, .csv, .xlsx"
+        name="File"
+      />
+      <!--SUBMIT & RESET-->
+      <p><input type="submit" /> <input type="reset" /></p>
+    </form>
+  </body>
+</html>
